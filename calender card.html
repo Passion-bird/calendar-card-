@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calendar cards</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style>
+    body {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .container {
+        display: flex;  
+        justify-content: center;
+        margin-top: 100px;
+      
+    }
+    .card {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        margin: 50px;
+   
+    }
+    .card-body {
+        background-color: rgb(86, 37, 223);
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+    }
+
+    .btn {
+     
+        border-radius: 50px;
+        background-color: rgb(236, 236, 236);
+        border: none;
+        margin-left: 8px;
+        margin-top: 5px;
+        padding-left: 15px;
+        padding-right: 20px;
+        color:rgb(86, 37, 223);
+    }
+
+    .btn:hover {
+        transition: 0.3s;
+        background-color: rgb(86, 37, 223);
+        color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.11), 0 6px 20px 0  rgba(87, 37, 223, 0.329);
+        cursor: pointer;
+    }
+
+    .shadows {
+        background-color: rgb(86, 37, 223);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.014), 0 6px 20px 0  rgba(87, 37, 223, 0.192);
+        color: white;
+    }
+
+    .shadows:hover {
+        background-color: rgb(238, 238, 238);
+        color:rgb(86, 37, 223);
+        box-shadow: none;
+        cursor:pointer;
+    }
+    .bg-white {
+        cursor:pointer;
+        border-radius: 4px;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+
+
+    }
+
+    .col:hover {
+        background-color: transparent;
+    }
+
+    .b-right {
+        border-right: 1px dashed rgba(0, 0, 0, 0.397);
+    }
+
+    .zoom {
+        overflow: hidden;
+        width: 298px;
+        height: 200px;
+
+    }
+
+    .zoom img {
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover img {
+        transform: scale(1.5);
+    }
+
+    .sub-head {
+        color:  rgba(87, 37, 223, 0.596);
+        margin: 5px;
+    }
+
+    .row {
+        margin: 10px;
+    }
+    
+    .card-header {
+        background-color: white;
+        color: rgb(86, 37, 223);
+        
+    }
+
+    .bg {
+        border: 1px solid white;
+        border-top:10px solid white ;
+        border-radius: 1px;
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        padding:0 10px;
+        margin: 5px;
+        font-size: 20px;
+        font-weight: 700;
+        cursor:pointer;
+
+    }
+
+    .bg:hover {
+       background-color: white;
+       color: rgb(86, 37, 223);
+       transition: 0.1s;
+    }
+</style>
+
+
+
+<body>
+
+    <div class="container"> 
+                <div class="card shadow" style="width:300px">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">Main Heading     <a href="#" class="btn ">edit </a></h3>
+                        <p class="sub-head">Sub heading</p>
+                        </div>
+                    <div class="card-body text-light">
+                        <p class="year text-center">2012-2013</p>
+                        <div class="row mt-3">
+                            <div class="col">
+                        <div class="row">
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+                        
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+
+                            <div class="col bg-white ">
+                                <a class="fa fa-facebook"></a>
+                            </div>
+                        
+                        </div>
+                        </div>
+                        </div>
+                    
+                        
+                    
+                    </div>
+                </div>
+
+                <div class="card shadow" style="width:300px">
+                    <div class="card-header">
+                        <h3 class="card-title m-0">Main Heading     <a href="#" class="btn shadows">edit </a></h3>
+                        <p class="sub-head">Sub heading</p>
+                        </div>
+                    <div class="card-body text-light">
+                        <p class="year text-center">2012-2013</p>
+                        <div class="row mt-3">
+                            <div class="col">
+                        <div class="row">
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+                            <div class="col bg">
+                                <a>1</a>
+                            </div>
+
+
+                        </div>
+                        </div>
+                        </div>
+                    
+                        
+                    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
